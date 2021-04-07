@@ -1,6 +1,7 @@
 node () {
     stage ('blah') {
         echo get_current_time_date()
+        clean build
     }
 }
 
