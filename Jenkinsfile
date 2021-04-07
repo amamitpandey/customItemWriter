@@ -1,4 +1,8 @@
 node () {
+	agent any
+    triggers {
+        pollSCM '* * * * *'
+    }
     stage ('step1') {
         echo get_current_time_date()
     }
