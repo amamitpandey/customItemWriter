@@ -4,7 +4,7 @@ node () {
     }
     stage ('step2') {
         sh "cd /usr/local/Cellar/gradle/6.7"
-        sh "gradle build"
+        sh "build"
     }
 }
 
