@@ -3,7 +3,7 @@ node () {
         echo get_current_time_date()
     }
     stage ('step2') {
-        gradle clean build
+        gradle build
     }
 }
 
