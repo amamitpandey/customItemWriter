@@ -3,7 +3,8 @@ node () {
         echo get_current_time_date()
     }
     stage ('step2') {
-        sh "gradle wrapper"
+        sh "cd ${GRADLE_HOME}"
+        sh "gradle --version"
     }
 }
 
