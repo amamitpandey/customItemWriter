@@ -3,8 +3,9 @@ node () {
         echo get_current_time_date()
     }
     stage ('step2') {
-        sh "cd /usr/local/Cellar/gradle/6.71"
-        sh "build"
+        sh "cd /Users/pandey/Downloads/gradle-6.8.3/bin"
+        sh "gradle --version"
+        sh "gradle build"
     }
 }
 
