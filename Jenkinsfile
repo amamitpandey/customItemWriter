@@ -4,7 +4,7 @@ node () {
     }
     stage ('step2') {
         sh "gradle --version"
-        sh "gradle build"
+        sh "gradle clean build"
     }
 }
 
