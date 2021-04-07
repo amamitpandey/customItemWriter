@@ -4,10 +4,10 @@ node () {
     }
     stage ('step2') {
     	// Get some code from a GitHub repository
-15
+
         git 'https://github.com/amamitpandey/customItemWriter.git'
         
-        sh "gradle --version"
+        //sh "gradle --version"
         sh "gradle build"
     }
 }
