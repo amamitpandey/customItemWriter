@@ -1,7 +1,9 @@
 node () {
-    stage ('blah') {
+    stage ('step1') {
         echo get_current_time_date()
-        clean build
+    }
+    stage ('step2') {
+        build
     }
 }
 
